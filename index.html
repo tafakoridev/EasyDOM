@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./EasyDOM.js"></script>
+    <title>Easy dom test</title>
+  </head>
+  <body dir="rtl" style="display: grid; place-items: center; height: 800px">
+    <b> سلام من TAG هستم </b>
+    <script>
+      $("b").moveTo("top", 150, 1000);
+      $("b").moveTo("right", 150, 1000);
+      $("b").moveTo("bottom", 350, 2000, () => $("b").hide(1000));
+    </script>
+  </body>
+</html>
